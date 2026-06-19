@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maziar Zendehroudi — Peintures</title>
+    <meta name="description" content="Galerie officielle de Maziar Zendehroudi. Présentation de peintures à l'huile et d'études artistiques.">
+    <meta name="keywords" content="Maziar Zendehroudi, Zendehroudi, peinture, huile sur toile, art contemporain">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zendehroudi.com/">
+    <meta property="og:title" content="Maziar Zendehroudi — Peintures">
+    <meta property="og:description" content="Galerie officielle de Maziar Zendehroudi. Présentation de peintures à l'huile et d'études artistiques.">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zendehroudi.com/">
+    <meta property="twitter:title" content="Maziar Zendehroudi — Peintures">
+    <meta property="twitter:description" content="Galerie officielle de Maziar Zendehroudi. Présentation de peintures à l'huile et d'études artistiques.">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: #fcfbfa; color: #1a1a1a; font-family: "Times New Roman", Times, serif; padding: 4% 8%; }
+        header { margin-bottom: 120px; }
+        h1 { font-weight: normal; font-size: 2rem; letter-spacing: 2px; margin-bottom: 10px; color: #0d0d0d; }
+        .subtitle { font-style: italic; color: #737373; font-size: 1.1rem; }
+        .artwork-container { margin-bottom: 160px; max-width: 900px; width: 100%; }
+        .artwork-container:nth-child(even) { margin-left: auto; text-align: right; }
+        .artwork-container:nth-child(even) .meta { text-align: right; }
+        .image-wrapper { margin-bottom: 25px; background-color: #f5f4f0; display: inline-block; max-width: 100%; }
+        img { display: block; max-width: 100%; height: auto; opacity: 0.95; }
+        .meta { text-align: left; max-width: 600px; display: inline-block; width: 100%; }
+        .title { font-size: 1.2rem; font-style: italic; margin-bottom: 4px; color: #0d0d0d; }
+        .details { font-size: 0.95rem; color: #595959; }
+        footer { margin-top: 200px; border-top: 1px solid #e5e4e0; padding-top: 40px; font-size: 0.9rem; color: #8c8c8c; }
+        footer a { color: #595959; text-decoration: none; border-bottom: 1px solid #d4d3cf; cursor: pointer; }
+        footer a:hover { color: #0d0d0d; border-bottom-color: #0d0d0d; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maziar Zendehroudi</h1>
+        <p class="subtitle">Peintures</p>
+    </header>
+
+    <main>
+        <div class="artwork-container">
+            <div class="image-wrapper"><img src="images/important-1.jpg" alt="important 1"></div>
+            <div class="meta"><p class="title">important 1</p><p class="details">Huile sur toile, 2020 — 55 × 46 cm (10F)</p></div>
+        </div>
+
+        <div class="artwork-container">
+            <div class="image-wrapper"><img src="images/etude-couple.jpg" alt="étude, couple"></div>
+            <div class="meta"><p class="title">étude, couple</p><p class="details">Huile sur toile, 2020 — 55 × 46 cm (10F)</p></div>
+        </div>
+
+        <div class="artwork-container">
+            <div class="image-wrapper"><img src="images/ici-ne-pas.jpg" alt="ici : ne pas"></div>
+            <div class="meta"><p class="title">ici : ne pas</p><p class="details">Huile sur toile, 2019 — 120 × 60 cm</p></div>
+        </div>
+
+        <div class="artwork-container">
+            <div class="image-wrapper"><img src="images/etude.jpg" alt="étude pour un portrait"></div>
+            <div class="meta"><p class="title">étude pour un portrait</p><p class="details">Huile sur toile, 2018 — 38 × 46 cm (8F)</p></div>
+        </div>
+
+        <div class="artwork-container">
+            <div class="image-wrapper"><img src="images/etude-en-contre-jour.jpg" alt="étude en contre-jour"></div>
+            <div class="meta"><p class="title">étude en contre-jour</p><p class="details">Huile sur toile, 2020 — 55 × 46 cm (10F)</p></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Maziar Zendehroudi — 
+            <a id="contact-link" onclick="ouvrirContact(); return false;">Contact</a>
+        </p>
+
+        <script>
+            function ouvrirContact() {
+                var u = "maziar";
+                var d = "zendehroudi.com";
+                window.location.href = "mailto:" + u + "@" + d;
+            }
+        </script>
+    </footer>
+
+</body>
+</html>
