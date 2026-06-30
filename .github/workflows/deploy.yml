@@ -1,0 +1,26 @@
+name: 🚀 Déploiement Automatique OVH
+
+on:
+  push:
+    branches:
+      - main  # Modifiez par 'master' si votre branche principale s'appelle master
+
+jobs:
+  web-deploy:
+    name: 🚚 Synchronisation des fichiers
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape 1 : Récupérer le code source du dépôt GitHub
+      - name: 📥 Récupérer le code
+        uses: actions/checkout@v4
+
+      # Étape 2 : Déployer l'intégralité des fichiers sur le FTP d'OVH
+      - name: 🚀 Envoi FTP vers OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /www/          # Dossier de destination sur votre hébergement OVH
+          dangerous-clean-slate: false # Mettre à true uniquement si vous voulez vider le dossier FTP avant l'envoi
